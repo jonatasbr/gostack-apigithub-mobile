@@ -4,9 +4,9 @@ module.exports = {
   },
   extends: ['airbnb', 'prettier', 'prettier/react'],
   globals: {
-    __DEV__: 'readonly',
     Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly'
+    SharedArrayBuffer: 'readonly',
+    __DEV__: 'readonly'
   },
   parser: 'babel-eslint',
   parserOptions: {
