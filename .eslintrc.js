@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    es6: true
+    es6: true,
   },
   extends: ['airbnb', 'prettier', 'prettier/react'],
   globals: {
@@ -22,7 +22,7 @@ module.exports = {
     'react/jsx-filename-extension': [
       'warn',
       {
-        extensions: ['.jsx', '.js']
+        extensions: ['jsx', 'js']
       }
     ],
     'import/prefer-default-export': 'off'

@@ -5,7 +5,19 @@ import AsyncStorage from '@react-native-community/async-storage';
 import { Keyboard, ActivityIndicator } from 'react-native';
 import api from '../../sevices/api';
 
-import { Container, Form, Input, SubmitButton, List, User, Name, Avatar, Bio, ProfileButton, ProfileButtonText, } from './styles';
+import {
+  Container,
+  Form,
+  Input,
+  SubmitButton,
+  List,
+  User,
+  Name,
+  Avatar,
+  Bio,
+  ProfileButton,
+  ProfileButtonText,
+} from './styles';
 
 export default class Main extends Component {
   static navigationOptions = {
@@ -64,7 +76,7 @@ export default class Main extends Component {
     Keyboard.dismiss();
   };
 
-  handleNavigate = (user) => {
+  handleNavigate = user => {
     const { navigation } = this.props;
 
     navigation.navigate('User', { user });
